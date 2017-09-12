@@ -1,10 +1,39 @@
 <html>
 <head>
   <title>performance_rnn</title>
+<style>
+body {
+  background-color: #000033;
+}
+a:link, a:visited {
+  color: #6fc9c6;
+}
+</style>
 </head>
 <body>
-  <div id="status">Loading</div>
-  <div id="results"></div>
+  <div id="logo">
+    <img src="https://magenta.tensorflow.org/assets/magenta-logo-bottom-text.png"
+      style="display: block; margin-left: auto; margin-right: auto; max-height: 300px;"
+      />
+  </div>
+  <div style="text-align: center; font-family: sans-serif; color: white; margin-left:auto; margin-right: auto; max-width:50%">
+    <div style="font-size: 30px; font-weight: bold; margin-top: 10px">
+      Performance RNN
+    </div>
+    <div style="font-size: 20px; color: #cccccc; margin-top: 10px">
+      <p>
+        This RNN was trained in TensorFlow on MIDI from piano performances recorded at the International Piano-e-competition. It was then ported to run in the browser using only Javascript in the deeplearn.js environment.
+      </p>
+      <p>
+      More details:<br/>
+      <a href="https://magenta.tensorflow.org/performance-rnn">magenta.tensorflow.org/performance-rnn</a><br/>
+      <a href="https://pair-code.github.io/deeplearnjs">pair-code.github.io/deeplearnjs/</a>
+      </p>
+    </div>
+    <div id="status-wrapper" style="font-size: 15px; margin-top: 20px">
+      Status: <span id="status">Loading</span>
+    </div>
+  </div>
   <script src="bundle.js"></script>
 </body>
 </html>
